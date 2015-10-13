@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<form role="form" action="/result" method="post">
+			<div class="form-group">
+				<label for="name">Your Name:</label>
+				<input type="text" class="form-control" name="name" required>
+			</div>
+			<div class="form-group">
+				<label for="location">Dojo Location:</label>
+				<select class="form-control" name="location">
+					<option>Mountain View</option>
+					<option>Seattle</option>
+					<option>Los Angeles</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="language">Favorite Languages:</label>
+				<select class="form-control" name="language">
+					<option>Javascript</option>
+					<option>CSS</option>
+					<option>PHP</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="comment">Comment (optional):</label>
+				<textarea class="form-control" rows="5" name="comment"></textarea>
+			</div>
+			<button type="submit" class="btn btn-info pull-right">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
